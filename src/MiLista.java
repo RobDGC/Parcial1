@@ -8,7 +8,6 @@ public class MiLista {
     }
 
     public boolean insertCola(PrintJob aux){
-        boolean val = false;
         Node nuevo = new Node(aux);
         if(tail == null && head == null){
             head = nuevo;
@@ -17,7 +16,7 @@ public class MiLista {
             tail.next = nuevo;
             tail = nuevo;
         }
-        return val;
+        return true;
     }
 
     public PrintJob getHead() {
